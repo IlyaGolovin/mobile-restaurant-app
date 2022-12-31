@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Restaurant Solo Project</title>
+    
+    <!-- CSS -->
+	<link rel="stylesheet" href="index.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" 
+    rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="center">
+                <h1>Jimmy's Diner</h1>
+                <h3>The best burgers and pizzas in town</h3>
+            </div>
+        <img class="img-header" src="images/ferks-guare-KEZdWfYD-ow-unsplash 1.png" alt="header">
+        </div>
+    </header>
+    <main>
+        <div class="item" id="item">
+			<!-- Items here!! -->
+		</div>
+             <div class="your-order-feed" id="your-order-feed" >
+                <div class="your-order">
+                    <h3>Your order </h3>
+                </div> 
+
+                <div class="complete-order" id="complete-order"></div>
+                <h3 class="totalPrice" id="totalPrice" >Total price:</h3>
+                
+                <div class="your-order-btn">
+                    <button id="order-item-btn" data-complete-order-btn="complete-order-btn" disabled >Complete order</button>
+                </div> 
+            </div>
+    </main>
+    <div class="modal" id="modal">
+        <div class="close-modal-btn-container">
+            <i class="fa-regular fa-circle-xmark modal-close-btn" id="modal-close-btn"></i>
+        </div>
+        <h2 class="paywall-heading">Enter card details</h2>
+        <form id="login-form">
+            <input type="text" name="fullName" placeholder="Enter your full name" required>
+            <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+            <!-- <input type="number" name="number" placeholder="Enter your card number" maxlength="12" required> -->
+            <input type="number" name="number" placeholder="Enter CVV" maxlength="3" required>
+            <button class="pay-btn" id="pay-btn" disabled  >Pay</button>
+        </form>
+    </div>
+
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
