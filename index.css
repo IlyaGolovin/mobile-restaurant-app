@@ -3,7 +3,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Smythe", sans-serif;
-  overflow: hidden; /* Hide scrollbars */
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -107,7 +108,7 @@ span.emoji {
 }
 
 .your-order-feed{
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 button {
